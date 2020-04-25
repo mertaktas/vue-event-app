@@ -1,8 +1,27 @@
 <template>
-  <div id="app" class="bg-gray-500">
-    <div id="nav">
-      <router-link to="/">Home</router-link>|
-      <router-link to="/about">About</router-link>
+  <div id="app" class="container mx-auto">
+    <div id="nav" class>
+      <ul class="flex items-center justify-between">
+        <div class="flex">
+          <li class="mr-6">
+            <router-link :to="{ name: 'Home'}">Home</router-link>
+          </li>
+          <li class="mr-6">
+            <router-link :to="{ name: 'About' }">About</router-link>
+          </li>
+        </div>
+        <div>
+          <img src="/favicon.ico" alt />
+        </div>
+        <div class="flex">
+          <li class="mr-6">
+            <router-link :to="{ name: 'Events' }">Events</router-link>
+          </li>
+          <li class="mr-6">
+            <router-link :to="{ name: 'Create' }">Create</router-link>
+          </li>
+        </div>
+      </ul>
     </div>
     <router-view />
   </div>
