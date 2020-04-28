@@ -6,23 +6,29 @@ Vue.use(VueRouter);
 const routes = [
 	{
 		path: '/',
-		name: 'Home',
+		name: 'home',
 		component: () => import('@/views/Home.vue'),
 	},
 	{
 		path: '/about',
-		name: 'About',
+		name: 'about',
 		component: () => import('@/views/About.vue'),
 	},
 	{
-		path: '/event-list',
-		name: 'Events',
-		component: () => import('@/views/Events.vue'),
+		path: '/event/event-list',
+		name: 'event-list',
+		component: () => import('@/views/EventList.vue'),
 	},
 	{
-		path: '/event-create',
-		name: 'Create',
-		component: () => import('@/views/Create.vue'),
+		path: '/event/:id',
+		name: 'event-show',
+		props: true,
+		component: () => import('@/views/EventShow.vue'),
+	},
+	{
+		path: '/event/event-create',
+		name: 'event-create',
+		component: () => import('@/views/EventCreate.vue'),
 	},
 ];
 

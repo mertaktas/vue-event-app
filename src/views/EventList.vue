@@ -3,4 +3,3 @@
     <h3>Events Page</h3>
   </div>
 </template>
-
