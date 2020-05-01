@@ -7,7 +7,7 @@
 		"build": "vue-cli-service build",
 		"test:unit": "vue-cli-service test:unit",
 		"lint": "vue-cli-service lint",
-		"json-server": "json-server --watch db.json --port 3000"
+		"json": "json-server --watch db.json --port 3000"
 	},
 	"dependencies": {
 		"axios": "^0.19.2",

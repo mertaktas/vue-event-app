@@ -18,7 +18,12 @@
             v-for="attende in event.attendees"
             :key="attende"
             class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
-          >{{ attende.name }}</span>
+          >
+            <base-icon class="inline-block">
+              <icon-users />
+            </base-icon>
+            {{ attende.name }}
+          </span>
         </div>
       </div>
     </router-link>
@@ -26,13 +31,18 @@
 </template>
 
 <script>
+import BaseIcon from "@/components/BaseIcon.vue";
+import IconUsers from "@/components/icons/IconUsers.vue";
 export default {
   name: "EventCard",
+  components: {
+    BaseIcon,
+    IconUsers
+  },
   props: {
     event: Object
   }
 };
 </script>
 
-<style>
-</style>
+<style></style>
