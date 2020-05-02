@@ -15,7 +15,7 @@ const routes = [
 		component: () => import('@/views/About.vue'),
 	},
 	{
-		path: '/event/event-list',
+		path: '/events/event-list',
 		name: 'event-list',
 		component: () => import('@/views/EventList.vue'),
 	},
@@ -26,7 +26,7 @@ const routes = [
 		component: () => import('@/views/EventShow.vue'),
 	},
 	{
-		path: '/event/event-create',
+		path: '/events/event-create',
 		name: 'event-create',
 		component: () => import('@/views/EventCreate.vue'),
 	},
