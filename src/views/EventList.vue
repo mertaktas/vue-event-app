@@ -2,7 +2,7 @@
   <div class="events container">
     <h1 class="font-bold text-xl">Events Page</h1>
     <div class="flex flex-wrap mb-2">
-      <EventCard v-for="(event, index) in events" :key="index" :event="event" />
+      <EventCard v-for="event in events" :key="event.id" :event="event" />
     </div>
   </div>
 </template>

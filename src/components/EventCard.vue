@@ -16,7 +16,7 @@
         <div class="px-6 py-4">
           <span
             v-for="attende in event.attendees"
-            :key="attende"
+            :key="attende.id"
             class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
           >
             <base-icon class="inline-block">
