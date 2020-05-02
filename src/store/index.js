@@ -17,11 +17,15 @@ export default new Vuex.Store({
 			'community',
 		],
 		events: [],
+		event: [],
 	},
 	getters: {},
 	mutations: {
 		ADD_EVENT(state, event) {
 			state.events.push(event);
+		},
+		SET_EVENT(state, event) {
+			state.event = event;
 		},
 		SET_EVENTS(state, events) {
 			state.events = events;
@@ -32,6 +36,15 @@ export default new Vuex.Store({
 			return EventService.postEvent(event).then(() => {
 				commit('ADD_EVENT', event);
 			});
+		},
+		fetchEvent({ commit }, id) {
+			return EventService.getEvent(id)
+				.then((response) => {
+					commit('SET_EVENT', response.data);
+				})
+				.catch((error) => {
+					console.log(error.response);
+				});
 		},
 		fetchEvents({ commit }) {
 			EventService.getEvents()

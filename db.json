@@ -147,6 +147,34 @@
       "time": "22:00",
       "attendees": [],
       "id": 7
+    },
+    {
+      "category": "nature",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "sadsad",
+      "description": "asdsad",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": [],
+      "id": 8
+    },
+    {
+      "category": "animal welfare",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "dsadas",
+      "description": "asdasdas",
+      "location": "asdasda",
+      "date": "2020-05-01T18:46:00.000Z",
+      "time": "22:00",
+      "attendees": [],
+      "id": 9
     }
   ]
 }
