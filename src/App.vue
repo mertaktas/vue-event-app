@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="container mx-auto">
     <NavBar />
-    <router-view />
+    <router-view :key="$route.fullPath" />
   </div>
 </template>
 
